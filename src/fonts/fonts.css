@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'JetBrains Mono NL Medium';
+    src: url(./JetBrainsMono-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrains Mono NL Thin';
+    src: url(./JetBrainsMono-Thin.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrains Mono NL Bold';
+    src: url(./JetBrainsMono-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrains Mono NL SemiBold';
+    src: url(./JetBrainsMono-SemiBold.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrains Mono NL ';
+    src: url(./JetBrainsMono-SemiBold.woff2);
+}
+
+@font-face {
+    font-family: 'JetBrains Mono NL ExtraBold';
+    src: url(./JetBrainsMono-ExtraBold.woff2);
+}

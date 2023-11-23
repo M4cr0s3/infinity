@@ -1,0 +1,120 @@
+@import url(./fonts/fonts.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+    font-size: clamp(1rem, 1.5vw + 0.7rem, 2.5rem);
+    @apply text-main font-JB font-extrabold;
+    line-height: normal;
+}
+
+.content {
+    font-size: clamp(0.625rem, 0.375vw + 0.55rem, 1rem);
+    @apply font-medium font-Ml mt-2.5;
+    line-height: normal;
+    width: 750px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.advantage {
+    @apply flex items-center justify-between
+}
+
+.advantage__item {
+    @apply mr-5
+}
+
+.logo__text {
+    font-size: clamp(1rem, 1.5vw + 0.7rem, 2.5rem);
+    @apply self-center font-extrabold whitespace-nowrap font-Ml text-primary;
+}
+
+.stats__section {
+    background: #F5F5F5;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white !important;
+    --swiper-navigation-size: clamp(1.25rem, 0.95rem + 1.5vw, 2.75rem) !important;
+    @apply bg-main rounded-full p-8;
+    top: calc(50% - 1rem)!important;
+}
+
+@media screen and (max-width: 1920px) {
+    .container {
+        @apply px-14
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .container {
+        width: 800px;
+        @apply px-0
+    }
+
+    .content {
+        width: 550px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        @apply p-6;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        width: 560px;
+    }
+
+    .content {
+        width: 550px;
+        @apply text-center mt-1
+    }
+
+    .advantage {
+        @apply flex-col
+    }
+
+    .advantage__item {
+        margin-right: 0;
+        @apply items-center
+    }
+
+    .advantage__img {
+        @apply justify-center flex mt-2.5
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        @apply p-5;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container {
+        width: 400px;
+    }
+
+    .content {
+        width: 320px;
+    }
+
+    .advantage {
+        @apply flex-col mt-0
+
+    }
+
+    .advantage__img {
+        @apply justify-center flex
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        @apply p-5;
+    }
+}
+
